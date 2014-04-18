@@ -528,7 +528,7 @@ static int wireless_charger_is_plugged(void)
 	}
 
 	return !(gpio_get_value(wlc_active_n));
-}:
+}
 
 static __init void mako_fixup_wlc_gpio(void) {
 	if (lge_get_board_revno() >= HW_REV_1_1)

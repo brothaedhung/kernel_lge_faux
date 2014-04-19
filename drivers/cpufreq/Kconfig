@@ -180,7 +180,7 @@ config CPU_FREQ_GOV_SMARTMAX_GEEB
 	bool "'smartmax' for geeb"
 	depends on CPU_FREQ_GOV_SMARTMAX
 
-config CPU_FREQ_DEFAULT_GOV_WHEATLEY
+config CPU_FREQ_GOV_WHEATLEY
         bool "wheatley"
         select CPU_FREQ_GOV_WHEATLEY
         help

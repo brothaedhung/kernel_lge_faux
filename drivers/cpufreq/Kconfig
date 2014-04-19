@@ -81,6 +81,13 @@ config CPU_FREQ_DEFAULT_GOV_SMARTMAX
         help
           Use the CPUFreq governor 'smartmax' as default
 
+config CPU_FREQ_DEFAULT_GOV_WHEATLEY
+	bool "wheatley"
+	select CPU_FREQ_GOV_WHEATLEY
+	select CPU_FREQ_GOV_PERFORMANCE
+	help
+	  Use the CPUFreq governor 'wheatley' as default.
+
 config CPU_FREQ_DEFAULT_GOV_USERSPACE
 	bool "userspace"
 	select CPU_FREQ_GOV_USERSPACE
@@ -173,6 +180,11 @@ config CPU_FREQ_GOV_SMARTMAX_GEEB
 	bool "'smartmax' for geeb"
 	depends on CPU_FREQ_GOV_SMARTMAX
 
+config CPU_FREQ_DEFAULT_GOV_WHEATLEY
+        bool "wheatley"
+        select CPU_FREQ_GOV_WHEATLEY
+        help
+          Use the CPUFreq governor 'wheatley' as default
 
 config CPU_FREQ_GOV_USERSPACE
 	tristate "'userspace' governor for userspace frequency scaling"
